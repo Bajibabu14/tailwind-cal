@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="calculator" class='h-96 w-64 border solid 2 bg-black text-center m-auto mt-28 rounded-lg'>
+        <h1 class='text-lg font-bold text-white h-10 p-2'>CALCULATOR</h1>
+        <input id="display" readonly class='w-60 h-10 font-bold border solid 2 border-blue pl-2'>
+        <button onclick="clearDisplay()" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>AC</button>
+        <button onclick="backspace ()" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>D</button>
+        <button onclick="appendToDisplay('+')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>+</button>
+        <button onclick="appendToDisplay('-')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>-</button>
+        <button onclick="appendToDisplay('9')"  class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>9</button>
+        <button onclick="appendToDisplay('8')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>8</button>
+        <button onclick="appendToDisplay('7')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>8</button>
+        <button onclick="appendToDisplay('*')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>*</button>
+        <button onclick="appendToDisplay('6')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>6</button>
+        <button onclick="appendToDisplay('5')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>5</button>
+        <button onclick="appendToDisplay('4')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>4</button>
+        <button onclick="appendToDisplay('/')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>/</button>
+        <button onclick="appendToDisplay('3')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>3</button>
+        <button onclick="appendToDisplay('2')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>2</button>
+        <button onclick="appendToDisplay('1')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>1</button>
+        <button onclick="appendToDisplay('%')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>%</button>
+        <button onclick="appendToDisplay('0')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>00</button>
+        <button onclick="appendToDisplay('00')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>0</button>
+        <button onclick="appendToDisplay('.')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-slate-700 hover:bg-sky-700'>.</button>
+        <button onclick="calculate('')" class='h-14 w-14 font-bold border solid 2 border-white text-white bg-orange-500 hover:bg-orange-800'>=</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
